@@ -30,8 +30,8 @@ public class SongTest {
 
     @Test
     public void testShowDetails() {
-        song.showDetails(); // this will print out details
-        // No assertion needed for printing, but you could capture the output if needed
+        song.showDetails();
+
     }
 
     @Test

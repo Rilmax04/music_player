@@ -18,14 +18,11 @@ class LibraryTest {
 
     @BeforeEach
     void setUp() {
-        library = new Library();
-        // Инициализируем список песен в библиотеке
         List<Song> songList = new ArrayList<>();
         library = new Library();
         song1 = new Song("Song One", 210, new Artist("Artist One", "Rock"), new Album("Album One", 2020));
         song2 = new Song("Song Two", 180, new Artist("Artist Two", "Pop"), new Album("Album Two", 2021));
 
-        // Устанавливаем пустой список песен
         library.setAllSongs(songList);
     }
 
@@ -41,7 +38,6 @@ class LibraryTest {
         library.addSongToLibrary(song1);
         library.addSongToLibrary(song2);
 
-        // Capture console output (optional enhancement for display tests)
         assertEquals(2, library.getAllSongs().size(), "Library should contain two songs.");
     }
 

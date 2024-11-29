@@ -5,7 +5,7 @@ import by.kurilo.musicplayer.music.artist.Artist;
 
 public class Song {
     private final String title;
-    private final int duration; // в секундах
+    private final int duration;
     private final Artist artist;
     private final Album album;
 
